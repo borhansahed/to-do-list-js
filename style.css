@@ -65,13 +65,68 @@ button:hover{
 footer{
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
 }
 footer a {
     text-decoration: none;
     color:white;
-    font-weight: 300;
+    font-weight: 400;
    
 
 }
+select{
+   border: none;
+   outline: none;
+   -webkit-appearance: none;
+   -moz-appearance: none; 
+    appearance: none;
+}
+.select{
+    margin: 1rem ;
+    position: relative;
+    overflow: hidden;
 
+}
+select{
+    color: #fda085;
+    cursor: pointer;
+    
+    padding: 0.5rem;
+   width: 10rem;
+}
+.select::after{
+
+content: "\25BC";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    background: #fda085;
+    pointer-events: none;
+    padding: 0.5rem;
+    transition: all 0.4s ease;
+}
+ .select:hover::after{ 
+    background-color:white;
+    color: #fda085;
+   
+    
+    
+}
+
+@media   (max-width: 570px) {
+    section{
+        max-width: 570px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    form input , form button{
+        padding: 0.3rem;
+        margin-left: 3px;
+       
+       font-size: 0.8rem;
+      
+    }
+    
+}
