@@ -1,31 +1,65 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;900&display=swap');
 
 body{
+    
    
-    background-image: linear-gradient( to left , rgba(67, 67, 95, 0.363) ,  rgba(114, 98, 68, 0.548) 40% , rgba(255, 192, 203, 0.705) 60% , rgba(255, 0, 0, 0.335) , rgb(167, 136, 79) );
+    background-image: linear-gradient( 120deg, #f6d365 , #fda085);
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
 
     
 }
+
+h1, form{
+
+      min-height: 20vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
 h1{
-    margin-top: 100px;
-    text-align: center;
-    font-size: 35px;
+    
+    margin-top: 40px;
+    font-size: 40px;
     font-weight: 700px;
-    color:black;
-    font: weight 900px; ;
+    color:white;
+    font-weight: 900px;
 }
 hr{
+    margin:  auto;
     padding-top: 30px;
-    text-align: center;
+    
     width: 250px;
-    margin: auto;
-    margin-top: 20px;
+    
     border-radius:  4px;
  
 }
+ form input , form button{
+    padding: 0.5rem;
+   
+   font-size: 1.3rem;
+   cursor: pointer;
+    
+   outline: none;
+   border: none;
+   
+}
+ form button{
+   color: #fda085;
+   
+    font-weight: 600;
+    transition: all 0.4s  ease;
+}
+button:hover{
+    background-color:#fda085;
+    color: white;
+}
+
